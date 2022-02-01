@@ -11,7 +11,7 @@
 
 .modal {
   position: fixed;
-  top: 20vh;
+  top: 15vh;
   left: calc(50% - 350px);
   width: min(700px, 90vw);
   background-color: white;

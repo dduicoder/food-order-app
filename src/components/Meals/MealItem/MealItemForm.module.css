@@ -18,3 +18,34 @@
   background-color: #641e03;
   border-color: #641e03;
 }
+
+.invalid {
+  animation: shake 0.6s ease-in-out;
+}
+
+.valid {
+  animation: none;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-2px);
+  }
+
+  20%,
+  80% {
+    transform: translateX(2px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translateX(-3px);
+  }
+
+  40%,
+  60% {
+    transform: translateX(3px);
+  }
+}
