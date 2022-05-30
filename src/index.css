@@ -1,7 +1,12 @@
+@font-face {
+  font-family: one;
+  src: url("samsungone.ttf");
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "SamsungOne", -apple-system, BlinkMacSystemFont;
+  font-family: one;
 }
 
 input:focus,
@@ -11,6 +16,12 @@ button:focus-visible {
 }
 
 body {
-  background-color: #ffdee9;
-  background-image: linear-gradient(45deg, #ffdee9 0%, #b5fffc 100%);
+  background: #666666;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+  background-clip: text;
+}
+/* box-shadow: 0 0 0 30px white inset !important; */
